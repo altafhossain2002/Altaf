@@ -24,5 +24,8 @@ public class PaymentSystem {
 
         paymentSystem.setPaymentStrategy(new CreditCardPayment());
         paymentSystem.makePayment(5500);
+        paymentSystem.setPaymentStrategy(new PayPalPayment());
+        paymentSystem.makePayment(6500);
+        
     }
 }
