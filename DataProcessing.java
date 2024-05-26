@@ -1,11 +1,10 @@
-
-
-
 public class DataProcessing {
     public static void main(String[] args) {
-        DataPipeline dbPipeline = new DatabasePipeline();
-        DataPipeline cldPipeline = new CloudPipeline();
-
+        DataProcessingPipeline dbPipeline = new DatabasePipeline();
         
-    }
+        dbPipeline.processData("A random URL");
+        DataProcessingPipeline cldPipeline = new CloudPipeline();
+
+        cldPipeline.processData("A random URL");
+}
 }
